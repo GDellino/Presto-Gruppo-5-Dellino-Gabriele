@@ -31,10 +31,24 @@ a{
     color: var(--black);
 }
 
+.wCustom{
+    width: 90%;
+}
+
 .bgCustom{
     box-shadow: 2px 2px 2px 2px;
     background-color: var(--white);
     
+}
+
+.btnCustom{
+    border: 2px solid #0B4F6C;
+    color: black;
+    
+    &:hover{
+    background-color: #0B4F6C;
+    border: 2px solid #0B4F6C;
+    color: white;}
 }
 
 .headerCustom{
