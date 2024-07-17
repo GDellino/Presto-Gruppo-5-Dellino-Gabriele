@@ -18,3 +18,14 @@ h1{
     font-family: "Anton SC", sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+.bgCustom{
+    box-shadow: 2px 2px 2px 2px;
+    
+}
+
+
