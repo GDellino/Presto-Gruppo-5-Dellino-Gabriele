@@ -1,0 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton+SC&family=Dosis:wght@200..800&display=swap');
+
+
+:root{
+
+--indaco:(#0B4F6C);
+--white:(#FBFBFF);
+--black:(#040F16);
+--ciano:(#01BAEF);
+
+}
+
+*{
+    font-family: "Dosis", sans-serif;
+}
+
+h1{
+    font-family: "Anton SC", sans-serif;
+}
+
