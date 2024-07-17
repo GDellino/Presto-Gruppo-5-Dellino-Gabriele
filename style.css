@@ -12,10 +12,18 @@
 
 *{
     font-family: "Dosis", sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-h1{
+h1, h2{
     font-family: "Anton SC", sans-serif;
+
+}
+
+.fontTitle{
+    font-family: "Anton SC", sans-serif;
+    letter-spacing: 5px;
 }
 
 a{
@@ -25,7 +33,13 @@ a{
 
 .bgCustom{
     box-shadow: 2px 2px 2px 2px;
+    background-color: var(--white);
     
 }
 
-
+.headerCustom{
+    background: url(./MEDIA/sfondo.png);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: cover;
+}
