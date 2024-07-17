@@ -56,4 +56,10 @@ a{
     background-repeat: no-repeat;
     background-position: right;
     background-size: cover;
+    
 }
+
+#navbar{
+    transition: 0.5s;
+}
+
