@@ -65,7 +65,8 @@ a{
 
 #navbar{
     transition: 0.5s;
-
+    
+    
     @media screen and (max-width: 600px) {
         width: 100% !important;
         margin-top: 0 !important;
@@ -77,4 +78,8 @@ a{
     font-weight: 600;
    
     
+}
+
+.fa-truck-fast{
+    transform: scaleX(-1);
 }
