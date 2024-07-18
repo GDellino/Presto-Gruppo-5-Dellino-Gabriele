@@ -24,6 +24,7 @@ h1, h2{
 .fontTitle{
     font-family: "Anton SC", sans-serif;
     letter-spacing: 5px;
+
 }
 
 a{
@@ -32,7 +33,10 @@ a{
 }
 
 .wCustom{
-    width: 90%;
+    width: 70%;
+ @media screen and (max-width: 600px) {
+    transform: translateX(25%);
+ }
 }
 
 .bgCustom{
@@ -61,6 +65,16 @@ a{
 
 #navbar{
     transition: 0.5s;
+
+    @media screen and (max-width: 600px) {
+        width: 100% !important;
+        margin-top: 0 !important;
+    }
 }
 
-
+.fontHeader{
+    color: var(--black);
+    font-weight: 600;
+   
+    
+}
