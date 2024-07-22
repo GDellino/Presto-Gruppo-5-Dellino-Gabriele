@@ -1,0 +1,25 @@
+[
+    { "name": "Legend of Avalon", "genre": "RPG", "price": 49.99 },
+    { "name": "Space Invaders", "genre": "Arcade", "price": 9.99 },
+    { "name": "Cyberpunk 2077", "genre": "Action", "price": 59.99 },
+    { "name": "Farm Simulator 2023", "genre": "Simulation", "price": 39.99 },
+    { "name": "Mystery Mansion", "genre": "Adventure", "price": 29.99 },
+    { "name": "Galactic Wars", "genre": "Strategy", "price": 44.99 },
+    { "name": "Fast Lane", "genre": "Racing", "price": 19.99 },
+    { "name": "Alien Encounter", "genre": "Horror", "price": 34.99 },
+    { "name": "Battlefield Heroes", "genre": "Shooter", "price": 54.99 },
+    { "name": "Fantasy Quest", "genre": "Fantasy", "price": 24.99 },
+    { "name": "Soccer Pro 2024", "genre": "Sports", "price": 49.99 },
+    { "name": "City Builder", "genre": "Simulation", "price": 29.99 },
+    { "name": "Wild West Adventures", "genre": "Adventure", "price": 39.99 },
+    { "name": "Zombie Apocalypse", "genre": "Horror", "price": 24.99 },
+    { "name": "Dragon Slayer", "genre": "RPG", "price": 44.99 },
+    { "name": "Tactical Ops", "genre": "Strategy", "price": 34.99 },
+    { "name": "Future Racer", "genre": "Racing", "price": 19.99 },
+    { "name": "Ultimate Fighter", "genre": "Fighting", "price": 59.99 },
+    { "name": "Treasure Hunt", "genre": "Adventure", "price": 29.99 },
+    { "name": "Mystic Realms", "genre": "Fantasy", "price": 49.99 }
+]
+  
+    
+  
