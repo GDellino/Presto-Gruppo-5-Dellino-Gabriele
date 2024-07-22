@@ -96,8 +96,15 @@ fetch("./games.json").then((response) => response.json()).then(data => {
         numberPrice.innerHTML = `${inputRange.value}€`
     })
 
+    let wordInput = document.querySelector('#wordInput');
+    function filterbyWord(word) {
+        let filtered = data.filtered (game => game.name.toLowerCase().replaceAll(" "),("").includes(word.toLowerCase().replaceAll(" "),("")))
+        showCards(filtered)
+    }
 
-
+    wordInput.addEventListener( 'input', ()=>{
+        filterbyWord(wordInput.value) 
+    })
 
 
 
