@@ -1,16 +1,16 @@
 let navbar = document.querySelector("#navbar");
-window.addEventListener("scroll", () =>{
+window.addEventListener("scroll", () => {
     let scrollValue = window.scrollY;
-    if(window.innerWidth >600){
-        if(scrollValue > 20) {
+    if (window.innerWidth > 600) {
+        if (scrollValue > 20) {
             navbar.classList.remove("mt-4", "w-50")
             navbar.classList.add("w-100")
-        } else{
+        } else {
             navbar.classList.add("mt-4", "w-50")
             navbar.classList.remove("w-100")
         }
-    } 
-    
+    }
+
 })
 
 
@@ -45,20 +45,20 @@ let observer = new IntersectionObserver((entries) => {
 });
 observer.observe(firstNumber)
 
-const games = [ 
-    {name: "Elden Ring", genere: "Action", prezzo: 79, img:"MEDIA/eldenring2.jpg"},
-    {name: "Playstation5", genere:"Console", prezzo: 599, img:"MEDIA/playstation3.jpg" },
-    {name: "XboxOne", genere:"Console", prezzo: 399, img:"MEDIA/xbox.jpg" },
-    {name: "Fifa23", genere:"Sport", prezzo: 59, img:"MEDIA/Fifa.jpg" },
-    {name: "Spiderman", genere:"Action", prezzo: 39, img: "MEDIA/spiderman.jpg"},
-    {name: "Sekiro", genere:"Puzzle game", prezzo: 20, img: "MEDIA/sekiro.jpg"}
-    
+const games = [
+    { name: "Elden Ring", genere: "Action", prezzo: 79, img: "MEDIA/eldenring2.jpg" },
+    { name: "Playstation5", genere: "Console", prezzo: 599, img: "MEDIA/playstation3.jpg" },
+    { name: "XboxOne", genere: "Console", prezzo: 399, img: "MEDIA/xbox.jpg" },
+    { name: "Fifa23", genere: "Sport", prezzo: 59, img: "MEDIA/Fifa.jpg" },
+    { name: "Spiderman", genere: "Action", prezzo: 39, img: "MEDIA/spiderman.jpg" },
+    { name: "Sekiro", genere: "Puzzle game", prezzo: 20, img: "MEDIA/sekiro.jpg" }
+
 ]
 
 let gamesWrapper = document.querySelector("#gamesWrapper")
-games.forEach((game)=> {
+games.forEach((game) => {
     let div = document.createElement("div")
-    div.classList.add("col-12","col-lg-3","py-3")
+    div.classList.add("col-12", "col-lg-3", "py-3")
     div.innerHTML = `
     
     <div class="card">
@@ -72,5 +72,9 @@ games.forEach((game)=> {
   </div>
     `
     gamesWrapper.appendChild(div)
-    
+
 })
+
+
+
+
