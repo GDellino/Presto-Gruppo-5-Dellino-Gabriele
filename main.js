@@ -46,12 +46,10 @@ let observer = new IntersectionObserver((entries) => {
 observer.observe(firstNumber)
 
 const games = [
-    { name: "Elden Ring", genere: "Action", prezzo: 79, img: "MEDIA/eldenring2.jpg" },
     { name: "Playstation5", genere: "Console", prezzo: 599, img: "MEDIA/playstation3.jpg" },
     { name: "XboxOne", genere: "Console", prezzo: 399, img: "MEDIA/xbox.jpg" },
     { name: "Fifa23", genere: "Sport", prezzo: 59, img: "MEDIA/Fifa.jpg" },
-    { name: "Spiderman", genere: "Action", prezzo: 39, img: "MEDIA/spiderman.jpg" },
-    { name: "Sekiro", genere: "Puzzle game", prezzo: 20, img: "MEDIA/sekiro.jpg" }
+    { name: "Spiderman", genere: "Action", prezzo: 39, img: "MEDIA/spiderman.jpg" }
 
 ]
 
@@ -75,6 +73,35 @@ games.forEach((game) => {
 
 })
 
+const reviews = [
+    {name : 'Carlo' , description : "Fifa fa schifo"},
+    {name : 'Pino' , description : "Elder Ring è il miglior gioco della storia"},
+    {name : 'Mattia' , description : "Consegne veloci"},
+    {name : 'Genoveffa' , description : "Servizio telefonico sempre disponibile"},
+    {name : 'Simone' , description : "Prezzi fantastici"}
+]
+
+let swiperWrapper = document.querySelector('#swiperWrapper')
+
+reviews.forEach(review =>{
+
+    let div = document.createElement('div')
+    div.classList.add("swiper-slide")
+    div.innerHTML=`
+    <div class="d-flex flex-column justify-content-center align-items-center h-100 p-3 text-center">
+        <h4>${review.name}</h4>
+        <p>${review.description}</p>
+    </div>
+    `
+    swiperWrapper.appendChild(div);
+})
+
+var swiper = new Swiper(".mySwiper", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
 
 
 

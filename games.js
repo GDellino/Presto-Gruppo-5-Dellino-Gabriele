@@ -50,20 +50,20 @@ fetch("./games.json").then((response) => response.json()).then(data => {
 
     let radios = document.querySelectorAll(".form-check-input")
 
-    function filteredByGenre() {
+    function filterByGenre(array) {
         let checked = Array.from(radios).find((input)=>input.checked)
         let categoria = checked.id
         if (categoria == `All`) {
-            showCards(data)
+            return array
         } else {
-            let filtered = data.filter((game) => game.genre == categoria)
-            showCards(filtered)
+            let filtered = array.filter((game) => game.genre == categoria)
+            return filtered
         }
     }
 
     radios.forEach(radio => {
         radio.addEventListener("click", () => {
-            filteredByGenre()
+            globalFilter()
         })
     })
 
@@ -86,26 +86,36 @@ fetch("./games.json").then((response) => response.json()).then(data => {
     }
     setinputPrice()
 
-    function filterbyPrice(){
-        let filtered = data.filter((game) => game.price <= inputRange.value)
-        showCards(filtered)
+    function filterByPrice(array){
+        let filtered = array.filter((game) => game.price <= inputRange.value)
+        return filtered;
     }
 
     inputRange.addEventListener("input", ()=>{
-        filterbyPrice()
+        globalFilter()
         numberPrice.innerHTML = `${inputRange.value}€`
     })
 
     let wordInput = document.querySelector('#wordInput');
-    function filterbyWord(word) {
-        let filtered = data.filtered (game => game.name.toLowerCase().replaceAll(" "),("").includes(word.toLowerCase().replaceAll(" "),("")))
-        showCards(filtered)
+    
+    function filterByWord(array) {
+        let filtered = array.filter(game => game.name.toLowerCase().replaceAll(" ","").includes(wordInput.value.toLowerCase().replaceAll(" ","")))
+        return filtered
     }
 
     wordInput.addEventListener( 'input', ()=>{
-        filterbyWord(wordInput.value) 
+        globalFilter();
     })
 
+    function globalFilter(){
+        let filteredByPrice = filterByPrice(data)
+        let filteredByWord = filterByWord(filteredByPrice)
+        let filteredByGenre = filterByGenre(filteredByWord)
+        showCards(filteredByGenre)
+
+    }
+
+    globalFilter();
 
 
 
