@@ -16,9 +16,9 @@ fetch("./games.json").then((response) => response.json()).then(data => {
                                 </label>
                 `
 
-            radioWrapper.appendChild(div)
-        })
-
+                radioWrapper.appendChild(div)
+            })
+            
 
 
     }

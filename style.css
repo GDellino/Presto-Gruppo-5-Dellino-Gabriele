@@ -136,3 +136,35 @@ a{
     border-radius: 0.5rem;
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.361);
 }
+
+.contactSwiper{
+    width: 350px;
+    height: 500px;
+}
+.swiper-slide-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #000000;
+    height: 100%;
+    
+}
+
+.swiper-slide-contact:nth-child(1){
+    background: url(./MEDIA/Fifa.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.swiper-slide-contact:nth-child(2){
+    background: url(./MEDIA/sekiro.jpg);
+    background-position: center;
+    background-size: cover;
+}
+.swiper-slide-contact:nth-child(3){
+    background: url(./MEDIA/spiderman.jpg), white;
+    background-position: center;
+    background-size: cover;
+}
