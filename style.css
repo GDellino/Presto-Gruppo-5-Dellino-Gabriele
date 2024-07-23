@@ -113,3 +113,26 @@ a{
     height: 100%;
     object-fit: cover;
   }
+
+  .contact-row{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.507), rgba(0, 0, 0, 0.501)), url(./MEDIA/joystick.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 60px;
+    height: calc(100vh-56)
+  ;
+  }
+
+  .container-form::before{
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color:#0B4F6C; 
+    position: absolute;
+    left: -30px;
+    bottom: -30px;
+    z-index: -1;
+    border-radius: 0.5rem;
+    box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.361);
+}
