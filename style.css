@@ -137,6 +137,16 @@ a{
     box-shadow: 4px 4px 15px rgba(0, 0, 0, 0.361);
 }
 
+
+.contactForm{
+    @media screen and (max-width: 600px) {
+        text-align: center;
+    
+    }
+}
+
+
+
 .contactSwiper{
     width: 350px;
     height: 500px;
@@ -154,17 +164,17 @@ a{
 }
 
 .swiper-slide-contact:nth-child(1){
-    background: url(./MEDIA/Fifa.jpg);
+    background: url(./MEDIA/person2.jpg);
     background-position: center;
     background-size: cover;
 }
 .swiper-slide-contact:nth-child(2){
-    background: url(./MEDIA/sekiro.jpg);
+    background: url(./MEDIA/person1.jpg);
     background-position: center;
     background-size: cover;
 }
 .swiper-slide-contact:nth-child(3){
-    background: url(./MEDIA/spiderman.jpg), white;
+    background: url(./MEDIA/person3.jpg), white;
     background-position: center;
     background-size: cover;
 }
